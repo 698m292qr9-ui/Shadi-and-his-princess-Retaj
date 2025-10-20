@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إلى نجمتي الساطعة | رسائل شادي</title>
+    <link rel="stylesheet" href="style-v3.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;700&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-star-theme">
+
+    <canvas id="star-canvas"></canvas>
+
+    <main id="app-container">
+
+        <section id="home-page" class="page active">
+            <h1 class="greeting-text"></h1>
+            <h2 class="greeting-text-en"></h2>
+            
+            <div class="main-menu">
+                <a href="#" class="menu-button" data-target="quiz-page">
+                    <h3>هل تستطيعين الإجابة عليها؟</h3>
+                    <h4>Can You Answer Them?</h4>
+                </a>
+                <a href="#" class="menu-button" data-target="love-languages-page">
+                    <h3>أُحِبُك</h3>
+                    <h4>I Love You</h4>
+                </a>
+            </div>
+        </section>
+
+        <section id="quiz-page" class="page">
+            <a href="#" class="back-button" data-target="home-page">← عودة</a>
+            <h2 class="quiz-title">هل تستطيعين الإجابة عليها؟</h2>
+            <h3 class="quiz-subtitle">Can You Answer Them?</h3>
+            
+            <div id="quiz-content">
+                </div>
+        </section>
+
+        <section id="love-languages-page" class="page">
+            <a href="#" class="back-button" data-target="home-page">← عودة</a>
+            <h2 class="languages-title">أُحِبُك بكل اللغات</h2>
+            <p id="language-prompt" class="prompt-text">اضغطي على الشاشة لتعرفي حقيقة شعوري</p>
+            <div id="language-display" class="language-box">
+                </div>
+        </section>
+
+    </main>
+
+    <div id="feedback-emoji"></div>
+
+    <script src="script-v3.js"></script>
+</body>
+</html>
